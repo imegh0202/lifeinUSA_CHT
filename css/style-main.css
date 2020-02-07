@@ -417,8 +417,8 @@
 	position: absolute;
 	top: 0;
 	transform: translate(0,-50%);
-	width: 46px;
-	height: 200px;
+	width: 48px;
+	height: 180px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 40px;
@@ -437,14 +437,10 @@
 .owl-theme .owl-nav button.owl-prev:hover,
 .owl-theme .owl-nav button.owl-next:hover{
 	opacity:1;
-	background-color: rgba(25,25,25,0.1);
+	background-color: rgba(25,25,25,0.3);
 }
-
 .owl-theme .owl-dots .owl-dot{
 	margin-top: 20px;
-}
-.owl-theme .owl-dots .owl-dot:hover span{
-	background-color:#BBBBBB;
 }
 .owl-theme .owl-dots .owl-dot.active span{
 	background-color: #BB7C3E;
@@ -480,9 +476,14 @@
 	justify-content: center;
 }
 .home .w3-section{
-	margin-top: 24px;
+	margin-top: 80px;
 	padding-right: 16px;
 	padding-left: 16px;
+}
+@media(max-width:768px){
+	.home .w3-section{
+		margin-top: 36px;
+	}
 }
 .home .w3-section .image-container{
 	box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
