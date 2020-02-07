@@ -1,0 +1,29 @@
+.s-triangle.e-left-top,
+.s-triangle.e-right-bottom{
+    border-color: #d5a26f transparent transparent transparent;
+}
+.s-triangle.e-small{
+    border-width: 32px 32px 0 0;
+}
+.s-triangle.e-left-top,
+.s-triangle.e-right-bottom{
+    position: absolute;
+    /* -webkit-transform-origin: 0 0; */
+    /* transform-origin: 0 0; */
+    /* -webkit-transition: -webkit-transform .35s cubic-bezier(0.215,.61,.355,1) 0s; */
+    transition: transform .35s cubic-bezier(.61,0.215,.355,1) 0s;
+}
+.s-triangle.e-left-top{
+    top: 0;
+    left: 0;
+}
+.s-triangle.e-right-bottom{
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+.s-triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
