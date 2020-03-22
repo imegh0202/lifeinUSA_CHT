@@ -65,10 +65,10 @@
 	line-height: 20px;
 	padding: 22px 16px;
 }
-.navbar .nav .nav__link.light{
+/* .navbar .nav .nav__link.light{
 	transition: all .5s;
 	color: #fff;
-}
+} */
 .navbar .nav .nav__item.active .nav__link{
 	color: #d5a26f;
 }
@@ -291,6 +291,9 @@
 	display: block;
 	width: 100%;
 	padding-top: 40%;
+}
+.image-shadow{
+	box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 /*------------------------------------*\

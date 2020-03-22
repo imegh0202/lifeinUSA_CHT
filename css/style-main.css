@@ -231,7 +231,7 @@
     about
 \*------------------------------------*/
 .about-preview{
-	margin-top: 10%;
+	margin-top: 20%;
 }
 .about-preview .title,
 .home-preview .title{
@@ -257,14 +257,17 @@
 	margin-top: 22px;
 }
 .about-preview p.para{
-	padding: 30px 15px;
+	padding: 30px 0px;
+	padding-right: 40px;
 }
 @media (max-width: 768px){
 	.about-preview p.para{
 		padding:26px 10px;
 	}
 }
-
+.u-padding-56{
+	padding: 56px;
+}
 /*------------------------------------*\
     picture-wall
 \*------------------------------------*/

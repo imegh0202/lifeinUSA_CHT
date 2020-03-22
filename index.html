@@ -110,7 +110,6 @@
 							 data-original="#000000" class="active-path" data-old_color="#000000" fill="rgba(150, 108, 66,1)" />
 						</g>
 					</svg>
-					<!-- rgba(150, 108, 66,1) -->
 				</a>
 			</div>
 			<!-- End jumbotron -->
@@ -129,8 +128,8 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-1-2 u-padding-32 col-md-1-1 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-							<div class="image-container image-ratio-4-3">
+						<div class="col-1-2 u-padding-56 col-md-1-1 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+							<div class="image-container image-ratio-4-3 image-shadow">
 								<div class="image" style="background-image: url(images/travel/Nick.png);">
 									<span class="s-triangle e-left-top e-small"></span>
 									<span class="s-triangle e-right-bottom e-small"></span>
@@ -428,6 +427,8 @@
 			$('.navbar .nav .nav__link').addClass('light');
 		} else {
 			$('.navbar').removeClass("active");
+			$('.navbar .nav .nav__item').removeClass("active");
+			
 			$('.navbar .nav .nav__link').removeClass("light");
 		}
 	});
