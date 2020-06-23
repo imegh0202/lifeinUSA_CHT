@@ -115,70 +115,6 @@
 	animation: opa .3s ease;
 }
 
-/*.active-mask-lb:before{
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0,0,0,0.5);
-
-	transition: all .4s;
-	z-index: 2;
-}
-.active-mask-lt:before{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0,0,0,0.5);
-
-	transition: all .4s;
-	z-index: 2;
-}
-.active-mask-rt:after{
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0,0,0,0.5);
-
-	transition: all .4s;
-	z-index: 2;
-}
-.active-mask-rb:after{
-	content: '';
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0,0,0,0.5);
-
-	transition: all .4s;
-	z-index: 2;
-}
-
-.active-mask-lb:hover:before,.active-mask-lt:hover:before,
-.active-mask-rb:hover:after,.active-mask-rt:hover:after{
-	width: 0;
-	height: 0;
-	animation: opa .4s ease;
-}
-
-@keyframes opa {
-    from{
-		background-color: rgba(255,255,255,0);
-    }
-    to{
-		background-color: rgba(0,0,0,0.5);
-    }
-}*/
 
 /*------------------------------------*\
     scrolldown
@@ -237,6 +173,7 @@
 .home-preview .title{
 	font-size: 28px;
 }
+
 @media screen and (max-width:768px){
 	.about-preview,
 	.home-preview{
@@ -244,26 +181,39 @@
 		margin-bottom: 24px;
 	}
 }
-@media screen and (max-width:996px){	
-	.about-preview .title,
-	.home-preview .title{
-		margin-top: 0px;
-	}
-}		
+.about .image-container{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+.about .image-container .image{
+	transition: all 0.3s;
+}
+.about .image-container:hover .image{
+	transform:scale(1.4,1.4);
+}
+
+@media screen and (max-width:768px){
+	.about .image-container{
+		width: 160px;
+		height: 160px;
+	}	
+}
+.about-preview{
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 48px 0;
+	text-align: center;
+}
 .about-preview p.para,
 .home-preview p.para{
 	font-size: 18px;
 	line-height: 22px;
-	margin-top: 22px;
+	padding: 16px 0;
 }
-.about-preview p.para{
-	padding: 30px 0px;
-	padding-right: 40px;
-}
-@media (max-width: 768px){
-	.about-preview p.para{
-		padding:26px 10px;
-	}
+.home-preview p.para{
+	margin-top: 20px;
 }
 .u-padding-56{
 	padding: 56px;
